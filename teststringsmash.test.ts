@@ -1,20 +1,17 @@
-import { assert } from "chai";
-
 import { smash } from "./stringsmash";
 
-describe("smash", () =>  {
-
-  it ("Should return empty string for empty array.", () => {
-    assert.strictEqual(smash([]), "");
+describe("smash", () => {
+  test("Should return empty string for empty array.", () => {
+    expect(smash([])).toBe("");
   });
 
-  it ("One word example should return the word.", () => {
-    assert.strictEqual(smash(["hello"]), "hello");
+  test("One word example should return the word.", () => {
+    expect(smash(["hello"])).toBe("hello");
   });
-    
-  it ("Multiple words should be separated by spaces.", () =>  {
-    assert.strictEqual(smash(["hello", "world"]), "hello world");
-    assert.strictEqual(smash(["hello", "amazing", "world"]), "hello amazing world");
-    assert.strictEqual(smash(["this", "is", "a", "really", "long", "sentence"]), "this is a really long sentence");
-  });  
+
+  test("Multiple words should be separated by spaces.", () => {
+    expect(smash(["hello", "world"])).toBe("hello world");
+    expect(smash(["hello", "amazing", "world"])).toBe("hello amazing world");
+    expect(smash(["this", "is", "a", "really", "long", "sentence"])).toBe("this is a really long sentence");
+  });
 });
