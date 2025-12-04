@@ -8,7 +8,18 @@ This repository contains my solutions to Codewars exercises in TypeScript.
    *File:* `stringsmash.ts`  
    *Test File:* `teststringsmash.test.ts`
 
-2. **(Add your second exercise here)**  
+2. **Bit Counting**  
+   *Description:* Counts the number of bits set to `1` in the binary representation of a given non-negative integer.  
+   *File:* `bitcounting.ts`  
+   *Test File:* `testbitcounting.test.ts`
+
+3. **Rock Paper Scissors**  
+   *Description:* Determines the winner of a Rock-Paper-Scissors game between two players based on their chosen moves.  
+   *File:* `rockpaperscissors.ts`  
+   *Test File:* `testrockpaperscissors.test.ts`
+
+
+4. **(Add your fourth exercise here)**  
    *Description:* Exercise description goes here.  
    *File:* `filename.ts`  
    *Test File:* `testfilename.test.ts`
